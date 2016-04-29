@@ -1,0 +1,47 @@
+.stadium
+	&-content
+		text-align center
+	&-article
+		width 30%
+		display inline-block
+		vertical-align top
+		margin-right 1%
+		margin-left 1%
+		margin-bottom 25px
+		border-radius 0 10px 0 10px
+		background-position center
+		background-size cover
+		height 230px
+		cursor pointer
+		color white
+		text-decoration none
+		box-shadow 0 0 10px 0 rgba(0,0,0,.4)
+		&:hover
+			text-decoration none
+	&-block
+		background-color rgba(0,0,0,.7)
+		height 100%
+		border-radius 0 10px 0 10px
+		padding 0 15px
+		display table
+		&-content
+			display table-cell
+			vertical-align middle
+			h4
+				color white
+				text-transform uppercase
+				margin 0
+			h6
+				color red
+				margin 0
+				text-transform uppercase
+			p
+				color white
+				margin 10px 0 0 0
+	@media screen and (max-width 768px)
+		&-article
+			width 100%
+			display block
+			margin-right 0
+			margin-left 0
+			border-radius 0
