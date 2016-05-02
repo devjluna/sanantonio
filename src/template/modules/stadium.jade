@@ -1,0 +1,31 @@
+.container
+	.row
+		section.stadium-title.animated
+			h1.title Nuestros
+				span  locales
+			.control
+				button(class="all-stadium" href="#") Ver todas
+				button(class="owl-prev" style="")
+					i(class="fa fa-chevron-left" aria-hidden="true")
+				button(class="owl-next" style="")
+					i(class="fa fa-chevron-right" aria-hidden="true")
+		// section.stadium-content
+			- for (var i = 1 ; i <= 6 ; i++)
+				a.stadium-article(style="background-image: url(images/campos/campo_#{i}.jpg)")
+					.stadium-block(style="display: none")
+						.stadium-block-content
+							h4 Campo deportivo #{i}
+							h6 Distrito San Juan
+							p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
+		#owl-team.owl-carousel.animated
+			- for (var i = 1 ; i <= 6 ; i++)
+				article.article-team
+					a(href='#')
+						figure.block.block-img
+							img(class="img-responsive" src="images/stadium/campo_#{i}.jpg")
+						aside.block.block-text
+							.content-text
+								h3 Campo
+									span  Lloque Yupanqui #{i}
+								h6 Los Olivos
+								p Experto en seguridad ciudadana, ex ministro del Interior y consultor de Naciones Unidas.

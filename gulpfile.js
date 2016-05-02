@@ -29,7 +29,7 @@ var config = {
 		output: './build'
 	},
 	images: {
-		watch: ['./src/images/*.jpg', './src/images/*.png'],
+		watch: ['./src/images/**/*.jpg', './src/images/**/*.png'],
 		output: './build/images'
 	}
 };

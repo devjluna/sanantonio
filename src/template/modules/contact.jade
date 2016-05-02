@@ -1,0 +1,72 @@
+.container
+	.row
+		.col-md-7.contact-block.animated
+			.contact-title
+				h2.title-block
+					i(class="fa fa-caret-right" aria-hidden="true")
+					| Formulario de contacto
+			.contact-text
+				form(class="form")
+					.form-box.col-xs-6
+						label(for="name") Nombre
+						input(type="text" class="form-control" id="name" placeholder="Nombre")
+					.form-box.col-xs-6
+						label(for="lastname") Apellido
+						input(type="text" class="form-control" id="lastname" placeholder="Apellido")
+					.form-box.col-xs-6
+						label(for="email") Email
+						input(type="text" class="form-control" id="email" placeholder="Email")
+					.form-box.col-xs-6
+						label(for="phone") Teléfono
+						input(type="text" class="form-control" id="phone" placeholder="Teléfono")
+					.form-box
+						label(for="issue") Asunto
+						input(type="text" class="form-control" id="issue" placeholder="Asunto")
+					.form-box
+						label(for="message") Mensaje
+						textarea(type="textarea" class="form-control" id="message" placeholder="Mensaje...")
+					
+					.form-box.btn-box
+						.btn-submit
+							button(type="submit" class="btn btn-red") Enviar
+		.col-md-5
+			.contact-title.animated-title.animated
+				h2.title-block
+					i(class="fa fa-caret-right" aria-hidden="true")
+					| Contacto
+			.contact-text.animated-text.animated
+				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas facere.
+				ul.list-contact
+					li
+						a(href="tel:999888777")
+							h5
+								i(class="fa fa-phone" aria-hidden='true')
+								| +511 999 888 777
+					li
+						a(href="mailto:info@sanantonio.com")
+							h5
+								i(class="fa fa-envelope" aria-hidden='true')
+								| info@sanantonio.com
+					li
+						a
+							h5
+								i(class="fa fa-clock-o" aria-hidden='true')
+								| Horario de atención de 9:00 a 20:00
+			.contact-title.animated-title.animated
+				h2.title-block
+					i(class="fa fa-caret-right" aria-hidden="true")
+					| Redes Sociales
+			.contact-text.animated-text.animated
+				ul.list-social
+					li
+						a(href="#")
+							i(class="fa fa-facebook" aria-hidden="true")
+					li
+						a(href="#")
+							i(class="fa fa-twitter" aria-hidden="true")
+					li
+						a(href="#")
+							i(class="fa fa-linkedin" aria-hidden="true")
+					li
+						a(href="#")
+							i(class="fa fa-google-plus" aria-hidden="true")

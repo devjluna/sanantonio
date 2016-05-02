@@ -1,26 +1,22 @@
 html,
 body
-	font-family roboto
+	font-family Open
 	font-weight 400
 .section
 	&-row
-		padding 120px 0
+		padding 50px 0
 		text-align center
-		&:nth-child(2n)
-			background-color $gray
-			background-size cover
-			background-repeat no-repeat
-			background-position center
-	&-title
-		text-align center
-		display inline-block
-		text-transform uppercase
-		font-size 3em
-		margin-top 0
-		margin-bottom 1em
-		font-family OpenCond
-		font-weight 700
-		span
-			color red
+		background-size cover
+		background-repeat no-repeat
+		background-position center
 #stadium
-	background-image url(../images/background/background_stadium.jpg)
+	background-image url(../images/background/team-bg.jpg)
+	background-attachment fixed
+#service
+	background-color $red
+.btn
+	padding 10px 30px
+	&.btn
+		&-red
+			background-color $red
+			color white

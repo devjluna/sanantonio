@@ -1,0 +1,38 @@
+.tp-banner
+	ul
+		//- SLIDE
+		- for (var i = 1 ; i <= 3 ; i++)
+			li(data-transition="fade" data-slotamount="5" data-masterspeed="700")
+				//- MAIN IMAGE
+				img(src="images/banner/slide-#{i}.jpg" style="background-color:#b68954" alt="slidebg1"  data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat")
+				if i < 3
+					div(
+						class="tp-caption large_bold_white_25 headline skewfromleft customout"
+						data-x="center"
+						data-y="110"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+						data-speed="800"
+						data-start="800"
+						data-easing="Power4.easeOut"
+						data-endspeed="300"
+						data-endeasing="Power1.easeIn"
+						data-captionhidden="on"
+						style="z-index: 6")
+						h3.titleRed Bienvenido al
+					div(
+						class="tp-caption large_bold_white_25 skewfromrightshort fadeout"
+						data-x="center"
+						data-y="220"
+						data-speed="500"
+						data-start="1200"
+						data-easing="Power4.easeOut")
+						span club deportivo
+						span San Antonio
+					div(
+						class="tp-caption lightgrey_divider skewfromrightshort fadeout"
+						data-x="center"
+						data-y="370"
+						data-speed="500"
+						data-start="1200"
+						data-easing="Power4.easeOut")
+						h3 Vive el futbol

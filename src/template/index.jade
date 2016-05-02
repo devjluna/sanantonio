@@ -3,58 +3,56 @@ html(lang="es")
 	head
 		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		title Club Deportivo San Antonio
+		link(type="text/css" rel="stylesheet" href="css/vendor/revolution.css")
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
 		link(type="text/css" rel="stylesheet" href="css/main.css")
 	body
-		header.header
-			include modules/nav
-			.header-banner
-			.header-img
-				img.img-team(src='images/banner/team_1.png')
-		section.section-row#stadium
-			.container
-				.row
-					h1.section-title Nuestros
-						span  (locales)
-					section.stadium-content
-						a.stadium-article(style="background-image: url(images/campos/campo_1.jpg)")
-							.stadium-block(style="display: none")
-								.stadium-block-content
-									h4 Campo deportivo 1
-									h6 Distrito San Juan
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
-						a.stadium-article(style="background-image: url(images/campos/campo_2.jpg)")
-							.stadium-block(style="display: none")
-								.stadium-block-content
-									h4 Campo deportivo 2
-									h6 Distrito Surco
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
-						a.stadium-article(style="background-image: url(images/campos/campo_3.jpg)")
-							.stadium-block(style="display: none")
-								.stadium-block-content
-									h4 Campo deportivo 3
-									h6 Distrito Miraflores
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
-						a.stadium-article(style="background-image: url(images/campos/campo_4.jpg)")
-							.stadium-block(style="display: none")
-								.stadium-block-content
-									h4 Campo deportivo 4
-									h6 Distrito La Molina
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
-						a.stadium-article(style="background-image: url(images/campos/campo_5.jpg)")
-							.stadium-block(style="display: none")
-								.stadium-block-content
-									h4 Campo deportivo 5
-									h6 Distrito Surquillo
-									p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quod aut minus libero laudantium at quae, natus, praesentium quas optio necessitatibus rem aliquam itaque facilis enim expedita. Magni, aut, cum.
+		header.header#header
+			include modules/slider
 
-		section.section-row
+		nav.header-nav
+			include modules/nav
+
+		section#we.animated.section-row
+			.container
+				.row
+					- for (var i = 1; i <= 3; i++)
+						.col-md-4.col-sm-2.we-block
+							if i === 1
+								figure.we-img
+									i(class="fa fa-rocket" aria-hidden="true")
+								h3 Misión
+							if i === 2
+								figure.we-img
+									i(class="fa fa-eye" aria-hidden="true")
+								h3 Visión
+							if i === 3
+								figure.we-img
+									i(class="fa fa-list-ul" aria-hidden="true")
+								h3 Valores
+							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque. Minima distinctio, facilis. Explicabo totam iusto tempora odit, ipsa consequuntur provident nisi perspiciatis.
+
+		section.section-row#stadium
+			include modules/stadium
+
+		section.section-row#service
 			.container
 				.row
 					.col-xs-12
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas facere commodi atque doloremque consectetur minus ad, aut illum voluptate. Libero impedit quod hic reiciendis omnis non dolor suscipit!
-		section.section-row
-			.container
-				.row
-					.col-xs-12
-						p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas facere commodi atque doloremque consectetur minus ad, aut illum voluptate. Libero impedit quod hic reiciendis omnis non dolor suscipit!
+						.service-content.animated
+							.col-sm-2
+								figure.service-img
+									img(class="img-responsive" src="images/base/logo_dantonia.png")
+							.col-sm-10
+								h4.service-title Servicio adicional
+								p.service-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque. Minima distinctio, facilis. Explicabo totam iusto tempora odit, ipsa consequuntur provident nisi perspiciatis.
+
+		section.section-row#contact
+			include modules/contact
+
+		footer.footer
+			include modules/footer
 		script(src="js/bundle.js")
+		script(src="js/vendor/jquery.themepunch.plugins.min.js")
+		script(src="js/vendor/jquery.themepunch.revolution.min.js")
+		script(src="js/vendor/owl.carousel.min.js")
