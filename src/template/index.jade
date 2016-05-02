@@ -13,20 +13,32 @@ html(lang="es")
 		nav.header-nav
 			include modules/nav
 
-		section#we.animated.section-row
+		section.section-row#red
 			.container
 				.row
-					- for (var i = 1; i <= 3; i++)
-						.col-md-4.col-sm-2.we-block
+					.col-xs-12
+						.red-content.animated
+							h4.red-title Lorem ipsum dolor
+							p.red-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque. Minima distinctio, facilis. Explicabo totam iusto tempora odit, ipsa consequuntur provident nisi 
+
+		section.animated.section-row#we
+			.container
+				.row
+					- for (var i = 1; i <= 4; i++)
+						.col-md-3.col-sm-2.we-block
 							if i === 1
+								figure.we-img
+									i(class="fa fa-bullhorn" aria-hidden="true")
+								h3 Nosotros
+							if i === 2
 								figure.we-img
 									i(class="fa fa-rocket" aria-hidden="true")
 								h3 Misión
-							if i === 2
+							if i === 3
 								figure.we-img
 									i(class="fa fa-eye" aria-hidden="true")
 								h3 Visión
-							if i === 3
+							if i === 4
 								figure.we-img
 									i(class="fa fa-list-ul" aria-hidden="true")
 								h3 Valores

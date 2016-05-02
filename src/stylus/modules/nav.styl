@@ -7,11 +7,12 @@
 		&-full
 			padding-right 0
 			padding-left 0
+			text-align center
 		&-header
 			float none
 			height auto
-			width 100%
-			text-align center
+			display inline-block
+			margin-bottom 10px
 		&-brand
 			display inline-block
 			float none
@@ -28,7 +29,9 @@
 					text-transform uppercase
 					transition all .3s
 					font-family OpenCond
+					font-weight 700
 					font-size 1.3em
+					padding 15px 30px
 					&:hover,
 					&:focus,
 					&:active
@@ -55,3 +58,27 @@
 						&-content
 							padding 0
 							width 100%
+		&-social
+			display inline-block
+			position absolute
+			right 50px
+			top 50px
+			.list-social
+				display table
+				margin-bottom 0
+				li
+					float left
+					margin 0 10px
+					&:first-child
+						margin-left 0
+					&:last-child
+						margin-right 0
+					a
+						display inline-block
+						opacity 1
+						transition all .3s
+						&:hover
+							opacity .5
+						i
+							font-size 2em
+							color $white
