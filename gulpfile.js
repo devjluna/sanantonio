@@ -24,7 +24,7 @@ var config = {
     output: './build/js'
   },
 	html: {
-		main: './src/template/index.jade',
+		main: './src/template/*.jade',
 		watch: './src/template/**/*.jade',
 		output: './build'
 	},

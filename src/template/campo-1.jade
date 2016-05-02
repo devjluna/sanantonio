@@ -1,0 +1,24 @@
+doctype html
+html(lang="es")
+	head
+		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+		title Club Deportivo San Antonio
+		link(type="text/css" rel="stylesheet" href="css/vendor/revolution.css")
+		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
+		link(type="text/css" rel="stylesheet" href="css/main.css")
+	body
+		header
+			.banner-page(style="background-image: url(images/banner/slide-1.jpg)")
+
+		nav.header-nav
+			include modules/nav
+
+		include modules/onestadium
+
+
+		footer.footer
+			include modules/footer
+		script(src="js/bundle.js")
+		script(src="js/vendor/jquery.themepunch.plugins.min.js")
+		script(src="js/vendor/jquery.themepunch.revolution.min.js")
+		script(src="js/vendor/owl.carousel.min.js")
