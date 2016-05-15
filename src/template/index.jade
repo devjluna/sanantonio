@@ -18,9 +18,7 @@ html(lang="es")
 				.row
 					.col-xs-12
 						.red-content.animated
-							h4.red-title Lorem ipsum dolor
-							p.red-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque. Minima distinctio, facilis. Explicabo totam iusto tempora odit, ipsa consequuntur provident nisi 
-
+							h4.red-title El espacio perfecto para disfrutar el deporte
 		section.animated.section-row#we
 			.container
 				.row
@@ -28,7 +26,7 @@ html(lang="es")
 						.col-md-3.col-sm-2.we-block
 							if i === 1
 								figure.we-img
-									i(class="fa fa-bullhorn" aria-hidden="true")
+									i(class="fa fa-users" aria-hidden="true")
 								h3 Nosotros
 							if i === 2
 								figure.we-img
@@ -44,6 +42,8 @@ html(lang="es")
 								h3 Valores
 							p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque.
 
+		section#stadium-maps
+
 		section.section-row#stadium
 			include modules/stadium
 
@@ -53,14 +53,16 @@ html(lang="es")
 		section.section-row#service
 			.container
 				.row
+					section.new-title
+						h1.title Socios
+							span  Estratégicos
 					.col-xs-12
-						.service-content.animated
-							.col-sm-2
-								figure.service-img
-									img(class="img-responsive" src="images/base/logo_dantonia.png")
-							.col-sm-10
-								h4.service-title Servicio adicional
-								p.service-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque. Minima distinctio, facilis. Explicabo totam iusto tempora odit, ipsa consequuntur provident nisi perspiciatis.
+						#owl-service.owl-carousel
+							- for (var i = 1 ; i <= 6 ; i++)
+								article
+									a
+										figure.block.block-img
+											img(class="img-responsive" src="images/base/socio-#{i}.png")
 
 		section.section-row#contact
 			include modules/contact
@@ -68,6 +70,9 @@ html(lang="es")
 		footer.footer
 			include modules/footer
 		script(src="js/bundle.js")
+		script(src="https://maps.google.com/maps/api/js?sensor=false")
+
+
 		script(src="js/vendor/jquery.themepunch.plugins.min.js")
 		script(src="js/vendor/jquery.themepunch.revolution.min.js")
 		script(src="js/vendor/owl.carousel.min.js")

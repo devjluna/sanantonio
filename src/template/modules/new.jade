@@ -1,13 +1,24 @@
 .container
 	.row
 		section.new-title
-			h1.title Ultimas
-				span  Noticias
-		- for (var i = 1 ; i <= 4 ; i++)
-			.col-md-3
-				figure.page-figure-block
-					img(class="img-responsive" src="images/new/new_#{i}.jpg")
-				.new-text
-					h5 Lorem ipsum dolor sit amet #{i}
-					h6 Consectetur adipisicing.
-					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, possimus ab omnis! Laudantium, repudiandae atque placeat perferendis.
+			h1.title
+				span  Servicio
+		- for (var i = 1; i <= 4; i++)
+			.col-md-3.col-sm-2.we-block
+				if i === 1
+					figure.we-img
+						i(class="fa fa-bullhorn" aria-hidden="true")
+					h3 Canchas
+				if i === 2
+					figure.we-img
+						i(class="fa fa-coffee" aria-hidden="true")
+					h3 Cafetería
+				if i === 3
+					figure.we-img
+						i(class="fa fa-futbol-o" aria-hidden="true")
+					h3 Academias
+				if i === 4
+					figure.we-img
+						i(class="fa fa-paper-plane" aria-hidden="true")
+					h3 Publicidad
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quia saepe nihil nulla sit assumenda nesciunt cumque.

@@ -5,10 +5,12 @@ window.jQuery = $ = require('jquery')
  */
 var carousel = require('./vendor/module')
 var animate = require('./vendor/animate')
+var map = require('./vendor/map')
 
 $(window).on('load', function(){
   carousel()
   animate()
+  map()
   $('.collapse').addClass('fadeInUp')
 })
 

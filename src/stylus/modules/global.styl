@@ -12,13 +12,24 @@ body
 #stadium
 	background-image url(../images/background/team-bg.jpg)
 	background-attachment fixed
+	&-maps
+		height 400px
 #service
-	background-color $red
+	background-color $gray_light
 #onecontact
 	background-color #F7F7F7
 #red
 	padding 25px 0
-	background-color $red
+	position relative
+	background-image url(../images/background/bg-grass.jpg)
+	&:before
+		content ''
+		background-color rgba($red,.8)
+		width 100%
+		height 100%
+		position absolute
+		left 0
+		top 0
 .btn
 	padding 10px 30px
 	&.btn
