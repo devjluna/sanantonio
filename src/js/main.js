@@ -51,12 +51,16 @@ $(window).on('load resize', function(){
   $(window).scroll(function() {
     var t = $(window).scrollTop()
         nav = $('.navbar-collapse')
-
-    if(t >= 163){
-      nav.addClass('navbar-full').show('slow')
+    if(wancho >= 768){
+      if(t >= 163){
+        nav.addClass('navbar-full').show('slow')
+      }else{
+        nav.removeClass('navbar-full').show('slow')
+      }
     }else{
-      nav.removeClass('navbar-full').show('slow')
+      $('.navbar-collapse').hide()
     }
+    
   })
 
 	/**

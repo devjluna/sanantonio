@@ -78,15 +78,31 @@ body
 				display inline-block
 				margin-right -4px
 				vertical-align middle
+			&-3
+				width 33.33%
+				display inline-block
+				margin-right -4px
+				vertical-align top
 			h5
-				color $red
+				color $gray
 				font-family OpenCond
 				font-weight 700
 				text-transform uppercase
-				span
-					color $gray
-					font-family Open
+				span,
+				i
 					font-weight 400
+					margin-right 10px
+				.fa-check-circle
+					color $red
 	&-figure
 		&-block
 			margin-bottom 20px
+	@media screen and (max-width 768px)
+		&-text
+			&-block
+				&-1,
+				&-2,
+				&-3
+					width 100%
+					display block
+					margin-right 0
