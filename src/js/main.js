@@ -27,6 +27,24 @@ $(window).on('load resize', function(){
 		$(this).find('.stadium-block').hide()
 	})
 
+  /**
+   * URL filter scroll
+   */
+  var urlSlug = window.location.href
+  var anchorFilter = urlSlug.substr(urlSlug.lastIndexOf('/'))
+
+  if (anchorFilter.substr(0, 2) == '/#') {
+      // console.log('correcto')
+
+      id = anchorFilter.substr(1)
+
+      $('html, body').animate({
+          scrollTop: $(id).offset().top - 35
+      }, 800)
+  } else {
+      // console.log('incorrecto')
+  }
+
   /*
    * Nav Scroll Full
   */
@@ -62,6 +80,7 @@ $(window).on('load resize', function(){
   
     return false
   });
+  
 
   /**
    * Banner section

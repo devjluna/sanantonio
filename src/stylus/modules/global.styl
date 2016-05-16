@@ -14,6 +14,8 @@ body
 	background-attachment fixed
 	&-maps
 		height 400px
+		&.maps-int
+			height 300px
 #service
 	background-color $gray_light
 #onecontact
@@ -42,6 +44,11 @@ body
 	background-repeat no-repeat
 	background-position center
 	background-attachment fixed
+	
+/*
+ * Datos del campo
+ */
+
 .page
 	&-title
 		background-color $red
@@ -61,6 +68,16 @@ body
 	&-text
 		&-block
 			text-align left
+			&-1
+				width 35%
+				display inline-block
+				margin-right -4px
+				vertical-align middle
+			&-2
+				width 65%
+				display inline-block
+				margin-right -4px
+				vertical-align middle
 			h5
 				color $red
 				font-family OpenCond

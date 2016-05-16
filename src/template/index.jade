@@ -3,6 +3,10 @@ html(lang="es")
 	head
 		meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
 		title Club Deportivo San Antonio
+		link(rel="shortcut icon" href="images/favicon.ico")
+		link(rel="shortcut" href="images/favicon.ico" type="image/x-icon")
+		link(rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico")
+		link(rel="shortcut icon" type="image/x-icon" href="images/favicon.ico")
 		link(type="text/css" rel="stylesheet" href="css/vendor/revolution.css")
 		link(type="text/css" rel="stylesheet" href="css/vendor/owl.carousel.css")
 		link(type="text/css" rel="stylesheet" href="css/main.css")
@@ -71,8 +75,13 @@ html(lang="es")
 			include modules/footer
 		script(src="js/bundle.js")
 		script(src="https://maps.google.com/maps/api/js?sensor=false")
-
-
+		script.
+			var punto = new google.maps.LatLng(-12.022549,-77.041464);
+			var mapOptions = {
+				center: punto,
+				zoom: 10,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
 		script(src="js/vendor/jquery.themepunch.plugins.min.js")
 		script(src="js/vendor/jquery.themepunch.revolution.min.js")
 		script(src="js/vendor/owl.carousel.min.js")
