@@ -34,8 +34,11 @@
 					margin-left 0
 				&.all-stadium
 					color white
-					padding 0 15px
+					padding 8px 15px
 					width auto
+					position relative
+					top 2px
+					text-decoration none
 				i
 					color white
 	&-content
@@ -122,3 +125,33 @@
 						color white
 						margin 0
 						text-align justify
+#onestadium
+	.article
+		&-team
+			display inline-block
+			width 25%
+			margin-right -4px
+			vertical-align top
+			a
+				display block
+				padding 0 15px
+				margin-bottom 15px
+				.block-text
+					.content-text
+						height auto
+						h3
+							color $gray
+						p
+							color $gray
+	@media screen and (max-width 992px)
+		.article
+			&-team
+				width 33.33%
+	@media screen and (max-width 768px)
+		.article
+			&-team
+				width 50%
+	@media screen and (max-width 500px)
+		.article
+			&-team
+				width 100%
