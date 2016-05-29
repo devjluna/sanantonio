@@ -68,20 +68,29 @@
 				margin-bottom 0
 				li
 					float left
-					margin 0 10px
 					&:first-child
-						margin-left 0
-					&:last-child
-						margin-right 0
+						margin-right 10px
 					a
 						display inline-block
 						opacity 1
 						transition all .3s
+						width 40px
+						height 40px
+						border-radius 50%
+						display table
+						text-decoration none
+						&.a
+							&-facebook
+								background-color #3b5998
+							&-youtube
+								background-color #e52d27
 						&:hover
 							opacity .5
 						i
 							font-size 2em
 							color $white
+							display table-cell
+							vertical-align middle
 	@media screen and (max-width 900px)
 		.navbar
 			&-collapse

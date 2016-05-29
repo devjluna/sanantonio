@@ -8,11 +8,11 @@
 			.contact-text
 				form(class="form")
 					.form-box.col-xs-6
-						label(for="name") Nombre
+						label(for="name") Nombre y Apellido
 						input(type="text" class="form-control" id="name" placeholder="Nombre")
 					.form-box.col-xs-6
-						label(for="lastname") Apellido
-						input(type="text" class="form-control" id="lastname" placeholder="Apellido")
+						label(for="lastname") Empresa
+						input(type="text" class="form-control" id="company" placeholder="Empresa")
 					.form-box.col-xs-6
 						label(for="email") Email
 						input(type="text" class="form-control" id="email" placeholder="Email")
@@ -21,12 +21,19 @@
 						input(type="text" class="form-control" id="phone" placeholder="Teléfono")
 					.form-box
 						label(for="issue") Asunto
-						input(type="text" class="form-control" id="issue" placeholder="Asunto")
+						select(class="form-control" id="issue" placeholder="Asunto")
+							option Academias
+							option Cafetería
+							option Eventos
+							option Canchas
+							option Lima target
+							option Publicidad
 					.form-box
 						label(for="message") Mensaje
 						textarea(type="textarea" class="form-control" id="message" placeholder="Mensaje...")
 					
 					.form-box.btn-box
+						p.form-term Al enviar dicha solicitud acepto los términos y condiciones.
 						.btn-submit
 							button(type="submit" class="btn btn-red") Enviar
 		.col-md-5
@@ -38,20 +45,20 @@
 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis eum quas facere.
 				ul.list-contact
 					li
-						a(href="tel:999888777")
+						a(href="tel:016830097")
 							h5
 								i(class="fa fa-phone" aria-hidden='true')
-								| +511 999 888 777
+								| +0511 683 0097
 					li
-						a(href="mailto:info@sanantonio.com")
+						a(href="mailto:info@deporplaza.pe")
 							h5
 								i(class="fa fa-envelope" aria-hidden='true')
-								| info@sanantonio.com
+								| info@deporplaza.pe
 					li
 						a
 							h5
 								i(class="fa fa-clock-o" aria-hidden='true')
-								| Horario de atención de 9:00 a 20:00
+								| Horario de atención: de 9am-6pm
 			.contact-title.animated-title.animated
 				h2.title-block
 					i(class="fa fa-caret-right" aria-hidden="true")
